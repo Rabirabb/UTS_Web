@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Learning</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <a href="../index.html">KOSGORO <span>LEARN</span></a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="content">
+      <h1>Hypertext Markup Language</h1>
+    </div>
+  </div>
+  <div class="box" onmouseover="bringToFront(this)">
+    
+      <a href="html_1.html" >
+        <h2 style="text-decoration: none">Perkenalan Hypertext Markup Language</h2>
+        <p style="text-decoration: none">Menjelaskan asal usul HTML dan fungsinya </p>
+        </a>
+  </div>
+  <div class="box" onmouseover="bringToFront(this)">
+    <h2>Struktur Kode HTML</h2>
+    <p>Akan segera datang</p>
+  </div>
+  <div class="box" onmouseover="bringToFront(this)">
+    <h2>Penjelasan Heading</h2>
+    <p>Akan segera datang</p>
+  </div>
+  <script>
+    function bringToFront(element) {
+      const boxes = document.querySelectorAll('.box');
+      boxes.forEach(box => {
+        box.style.zIndex = 1;
+      });
+      element.style.zIndex = 2;
+    }
+  </script>
+</body>
+</html>
